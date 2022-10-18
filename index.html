@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Navbar-section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">MJ</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page">About Me</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#skills" class="navbar__links" id="about-page">Expertise</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#experience" class="navbar__links " id="exp-page">Experience</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="#contacts" class="button" id="contact">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- About-me-section -->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">Michael Jordan Quizona</h1>
+      <p class="hero__description">Aspiring Virtual Assistant</p>
+      <button class="main__btn"><a href="LearnMore.html">Learn More</a></button>
+    </div>
+  </div>
+<div class="highlight"></div>
+
+<!-- Skills-section -->
+  <div class="main" id="skills">
+    <div class="Expertise">My Expertise</div>
+    <div class="main__container">
+      <div class="main__content">
+        <h1>Web Developing</h1>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Figma</li>
+      </div>
+      <div class="main__content1">
+        <h1>Graphic Skills</h1>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Premiere Pro</li>
+        <li>Adobe Illustrator</li>
+        <li>Canva</li>
+      </div>
+      <div class="main__content2">
+        <h1>Office Tools</h1>
+        <li>Microsoft Word</li>
+        <li>Google Docs</li>
+        <li>Microsoft Excel</li>
+        <li>Google Sheets</li>
+        <li>PowerPoint</li>
+        <li>Google Slides</li>
+        <li>Google Forms</li>
+        <li>Adobe Acrobat</li>
+      </div>
+    </div>
+  </div>
+
+<!-- Experience-section -->
+  <div class="experience" id="experience">
+    <h1>Work Experience</h1>
+    <div class="experience__wrapper">
+      <div class="experience__card">
+        <h2>APC Lending Company, Inc.</h2>
+        <p>Branch Assistant / Field Officer</p> 
+        <p>June 2016 - December 2016</p>
+        <div class="experience__btn">
+            <a href="https://www.facebook.com/caviteapclending" target="_blank"><img class="exlink" src="images/export.png" alt=""></a>
+        </div>
+      </div>  
+      <div class="experience__card">
+        <h2>On Semiconductor Philippines, Inc.</h2>
+        <p>Material Controller / Machine Operator</p>
+        <p>February 2017 - August 2017</p>
+        <div class="experience__btn">
+            <a href="https://www.onsemi.com" target="_blank"><img class="exlink" src="images/export.png" alt=""></a>
+        </div>
+      </div> 
+      <div class="experience__card">
+        <h2>ROHM Electronics Philippines, Inc.</h2>
+        <p>Machine Operator</p>
+        <p>October 2017 - July 2022</p>
+        <div class="experience__btn">
+            <a href="https://micro.rohm.com/en/repi/" target="_blank"><img class="exlink" src="images/export.png" alt=""></a>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+<!-- Contacts -->
+<div class="contacts" id="contacts">
+  <p class="cMe">Contact Me</p>
+  <div class="contacts__container">
+    <div class="contacts__content">
+      <div class="contacts__nest">
+        <button id="emailBtn" onclick="copyEmail()">
+          <div>
+            <img src="images/icons8-gmail-logo.svg" alt=""><h1>Gmail</h1>
+          </div>
+          <h2 id="emailCopy">mjquizona@gmail.com</h2>
+        </button>
+        <p class="tooltip">click to copy</p>
+      </div>
+      <div class="contacts__nest">
+        <a href="https://www.linkedin.com/in/michael-jordan-quizona-446353247" target="_blank">
+          <div>
+            <img src="images/icons8-linkedin-circled.svg" alt=""><h1>LinkedIn</h1>
+          </div>
+          <h2>https://www.linkedin.com/in/michael-jordan-quizona-446353247</h2>
+        </a>
+        <p class="tooltip">Click to open in new tab</p>
+      </div>
+      <div class="contacts__nest">
+        <a href="https://www.facebook.com/dlandhan" target="_blank">
+          <div>
+            <img src="images/icons8-facebook.svg" alt=""><h1> Facebook</h1>
+          </div>
+          <h2>https://www.facebook.com/dlandhan</h2>
+        </a>
+        <p class="tooltip">Click to open in new tab</p>
+      </div>
+      <div class="contacts__nest">
+        <button id="numBtn" onclick="copyNum()"> 
+          <div>
+            <div>
+              <img src="images/icons8-viber.svg" alt="">
+            </div>
+            <div>
+              <img src="images/icons8-telegram-app.svg" alt="">
+            </div>
+            <div>
+              <img src="images/icons8-whatsapp.svg" alt="">
+            </div>
+          </div>
+          <h2 id="numCopy">+639950720087</h2>
+        </button>
+        <p class="tooltip">click to copy</p>
+      </div>
+    </div> 
+    <form name="submit-to-google-sheet">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="text" name="Email" placeholder="Your Email" required>
+      <textarea style="resize: none;" name="Message" rows="10" placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+      <div id="msgSent"> 
+      </div>
+    </form>
+  </div>
+</div>
+<div class="copyRight">
+  <p>Copyright ©️ 2022 MJ Quizona │ All rights reserved │ Please feel free to contact me if you need any further information.</p>
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
