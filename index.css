@@ -360,6 +360,7 @@ body {
   font-size: 1.2rem;
   line-height: 2rem;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  list-style: none;
 }
 
 .main__content {
@@ -1045,6 +1046,7 @@ body {
     padding-right: 1rem;
   }
 }
+
 
 
 
